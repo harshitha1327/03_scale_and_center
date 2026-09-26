@@ -45,18 +45,18 @@ function scaleAndCenter() {
         outerRectangleWidth,
     );
 
-    const innerRectangleCoordinateX = g.calcOffset(
+    const innerRectangleX = g.calcOffset(
         outerRectangleWidth,
         innerRectangleWidth,
     ) + outerRectangleX;
-    const innerRectangleCoordinateY = g.calcOffset(
+    const innerRectangleY = g.calcOffset(
         outerRectangleHeight,
         innerRectangleHeight,
     ) + outerRectangleY;
 
     r.DrawRectangle(
-        innerRectangleCoordinateX,
-        innerRectangleCoordinateY,
+        innerRectangleX,
+        innerRectangleY,
         innerRectangleWidth,
         innerRectangleHeight,
         r.RED,
